@@ -1,0 +1,195 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+ 
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 0.5px;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10px;
+  background-color: rgb(30, 22, 19);
+  border: 10px solid rgb(30, 22, 19);
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.583);
+}
+
+.bookCover {
+  width: 60px;
+  height: 250px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  box-shadow: inset -3px -8px 15px 5px rgba(0, 0, 0, 0.629);
+  position: relative;
+}
+
+.bookCover:hover {
+  box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.055);
+}
+.popup {
+  position: absolute;
+  top: -10§px;
+  left: -20px;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(236, 222, 202, 0.372);
+  opacity: 0;
+  transition-delay: 1.5s;
+}
+
+.bookCover:hover .popup {
+  opacity: 1;
+}
+
+.bookTitle {
+  width: 100%;
+  height: 100%;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px; 
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.author {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 6px;
+  padding-bottom: 6px;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.red {
+  background-color: rgb(174, 10, 10);
+}
+.browndirty {
+  background-color: rgb(72, 62, 50);
+  color: rgb(161, 157, 157); 
+}
+.bluemarine {
+  background-color: rgb(10, 50, 65);
+  color: rgb(161, 157, 157); 
+}
+.bluedark {
+  background-color: rgb(4, 4, 91);
+  color: rgb(161, 157, 157); 
+}
+.greendark {
+  background-color: rgb(3, 55, 3);
+  color: rgb(161, 157, 157); 
+}
+.darkbrown {
+  background-color: rgb(43, 27, 3);
+  color: rgb(161, 157, 157); 
+}
+.orangered {
+  background-color: rgb(202, 62, 11);
+}
+.brownish {
+  background-color: rgb(116, 81, 65);
+}
+.reddark {
+  background-color: darkred;
+}
+.greentoxic {
+  background-color: rgb(64, 197, 55);
+}
+.graydark {
+  background-color: rgb(38, 41, 41);
+  color: rgb(161, 157, 157); 
+}
+.orangebrown {
+  background-color: rgb(120, 41, 4);
+}
+.black {
+  background-color: rgb(21, 21, 21);
+  color: rgb(161, 157, 157); 
+}
+.orangedark {
+  background-color: rgb(161, 53, 4);
+}
+.blueaqua {
+  background-color: rgb(4, 106, 106);
+}
+.gray {
+  background-color: gray;
+}
+.yellowgreeny {
+  background-color: rgb(185, 185, 53);
+}
+.greengray {
+  background-color: rgb(116, 143, 81);
+}
+.brownlight {
+  background-color: rgb(161, 149, 121);
+}
+.bluegray {
+  background-color: rgb(44, 101, 117);
+}
+.blueturqoise {
+  background-color: rgb(85, 167, 167);
+}
+.blue {
+  background-color: rgb(6, 51, 113);
+  color: rgb(161, 157, 157); 
+}
+.blueocean {
+  background-color: rgb(7, 52, 73);
+  color: rgb(161, 157, 157); 
+}
+.yellowdark {
+  background-color: rgb(167, 122, 0);
+}
+
+input[type=button], input[type=submit]{
+  background-color: rgb(140, 140, 140);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 4px 2px;
+  border-radius: 3px;
+  height: 28px;
+}
+
+option {
+  background-color: rgb(226, 226, 226); 
+  color: rgb(86, 86, 86); 
+}
+
+select {
+  width: 150px; 
+  height: 28px;
+  border: 1px solid rgb(194, 194, 194); 
+  background-color: rgb(233, 233, 233); 
+  color: rgb(91, 91, 91); 
+  font-size: 14px; 
+}
+
+h1 {
+ padding-bottom: 15px;
+}
